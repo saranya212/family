@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title >myweb</title>
+
+    <link rel = "icon" href = "images/familytree.jpg" 
+        type = "image/x-icon"> 
+          
+         </head>
+          <body>
+     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>   
+  <header>
+       <div class="row">
+       <div class="col-12">  
+        <nav class="navbar navbar-expand-lg bg-primary">
+        <a href="#" class="navbar-brand text-white">myFam</a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav">
+                <a href="#" class="nav-item nav-link active text-white">Home</a>
+                <a href="#" class="nav-item nav-link text-white">About</a>
+                <a href="#" class="nav-item nav-link text-white">Products</a>
+            </div>
+            <form class="form-inline ml-auto">
+                <input type="text" class="form-control mr-sm-2" placeholder="Search">
+                <button type="submit" class="btn btn-outline-light">Search</button>
+            </form>
+        </div>
+    </nav>
+       </div>
+         
+         </div>
+    </header>
+  <section>
+    <div class="container pt-3">
+          <div class="row ">
+                <div class="col-md-4">
+                    <img class="img-fluid" src="images/familytree.jpg" alt=""> 
+              </div>
+                <div class="col-md-3 ">
+                  <form action=""class="was-validated  needs-validation" novalidate >
+                  <div class="form-group mt-5">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
+                <div class="valid-feedback">Valid.</div>
+                 <div class="invalid-feedback">Please fill out this field.</div>
+                </div>
+            <div class="form-group">
+             <label for="pwd">Password:</label>
+             <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
+             <div class="valid-feedback">Valid.</div>
+             <div class="invalid-feedback">Please fill out this field.</div>
+          </div>
+           <div class="form-group form-check">
+          <label class="form-check-label">
+           <input class="form-check-input" type="checkbox" name="remember" required> Remember me
+
+           <div class="valid-feedback">Valid.</div>
+           <div class="invalid-feedback">Check this checkbox to continue.</div>
+
+         </label>
+         </div>
+    <button type="submit"  onclick="parent.location='inner.html'"      class="btn btn-primary">Submit</button>
+    <button type="submit" onclick="parent.location='signup.html'" class="btn btn-primary">signUp</button>
+
+  </div>
+  <script>
+    // Disable form submissions if there are invalid fields
+    (function() {
+      'use strict';
+      window.addEventListener('load', function() {
+        // Get the forms we want to add validation styles to
+        var forms = document.getElementsByClassName('needs-validation');
+        // Loop over them and prevent submission
+        var validation = Array.prototype.filter.call(forms, function(form) {
+          form.addEventListener('submit', function(event) {
+            if (form.checkValidity() === false) {
+              event.preventDefault();
+              event.stopPropagation();
+            }
+            form.classList.add('was-validated');
+          }, false);
+        });
+      }, false);
+    })();
+    </script>
+
+              <div class="col-md-5">
+                  <h3 class="text-info font-weight-bold font-italic text-justify pt-4">i wish i could relate to the people i'm related to</h3>
+                <p class="text-primary font-family-georgia,serif font-italic"> Like branches on a tree, our lives may grow in different directions yet our roots remain as one.
+
+                    Our family is a circle of strength and love, with every birth and every union, the circle will grow, every joy shared adds more love, every crisis faced together, makes the circle stronger.
+                    
+                    A past to remember, a present to celebrate, a future to generate.
+                     Family reunions provide an opportunity to gather family members so far and wide,renew old relationships,and meet some family members you may not even know.The key to a successful family reunions are planning and preperation.Like branches on a tree, our lives may grow in different directions yet our roots remain as one.
+
+Our family is a circle of strength and love, with every birth and every union, the circle will grow, every joy shared adds more love, every crisis faced together, makes the circle stronger.Family togetherness is important regardless of where you're from and especially during times of distress.
+
+A past to remember, a present to celebrate, a future to generate.
+</p>
+              </div>
+         </div> 
+         </div>
+</section>            
+</body>
+
+</html>
