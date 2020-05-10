@@ -5,32 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title >myweb</title>
 
-    <link rel = "icon" href = "images/familytree.jpg" 
-        type = "image/x-icon"> 
-          
+    <link rel = "icon" href = "images/familytree.jpg" type = "image/x-icon"> 
+        <!--<link href="stky.css" type="text/css"rel="stylesheets">-->  
          </head>
           <body>
      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>   
-  <header id="myHeader">
+  <header>
        <div class="row">
        <div class="col-12">  
-        <nav class="navbar navbar-expand-lg bg-primary .sticky {
-          position: fixed;
-          top: 0;
-          width: 100% ">
-        <a href="#" class="navbar-brand text-white">myFam</a>
+        <nav class="navbar navbar-expand-lg bg-primary  fixed-top">
+        <a href="pic.html" class="navbar-brand text-white">myFam</a>
         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav">
+        <div class="collapse navbar-collapse " id="navbarCollapse">
+            <div class="navbar-nav sticky-top">
                 <a href="#" class="nav-item nav-link active text-white">Home</a>
-                <a href="pic.html" class="nav-item nav-link text-white">About</a>
+                <a href="#" class="nav-item nav-link text-white">About</a>
                 <a href="#" class="nav-item nav-link text-white">Products</a>
             </div>
+            <div class=btn>
+              <button type="submit" onclick="parent.location='signup.html'" class="btn btn-primary">signUp</button>
+            </div>
+            
             <form class="form-inline ml-auto">
                 <input type="text" class="form-control mr-sm-2" placeholder="Search">
                 <button type="submit" class="btn btn-outline-light">Search</button>
@@ -40,44 +40,25 @@
        </div>
          
          </div>
+         <!--<script>
+          window.onscroll = function() {myFunction()};
+          
+          var navbar = document.getElementById("navbar");
+          var sticky = navbar.offsetTop;
+          
+          function myFunction() {
+            if (window.pageYOffset >= sticky) {
+              navbar.classList.add("sticky")
+            } else {
+              navbar.classList.remove("sticky");
+            }
+          }
+          </script>-->
+          
     </header>
-
-    <script>
-      window.onscroll = function() {myFunction()};
-      
-      var header = document.getElementById("myHeader");
-      var sticky = header.offsetTop;
-      
-      function myFunction() {
-        if (window.pageYOffset > sticky) {
-          header.classList.add("sticky");
-        } else {
-          header.classList.remove("sticky");
-        }
-      }
-      </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <section>
+<section>
     <div class="container pt-3">
-          <div class="row ">
+          <div class="row pt-5">
                 <div class="col-md-4">
                     <img class="img-fluid" src="images/familytree.jpg" alt=""> 
               </div>
@@ -101,31 +82,14 @@
 
            <div class="valid-feedback">Valid.</div>
            <div class="invalid-feedback">Check this checkbox to continue.</div>
-          </label>
+          </label>&nbsp;
+        </form>
         </div>
-        <button type="submit"   class="btn btn-primary">Submit</button>
-        <button type="submit" onclick="parent.location='signup.html'" class="btn btn-primary">signUp</button>
+        <button type="submit"  class="btn btn-primary btn-align=left ">Submit</button>
+        
     </div>
-  <script>
-    // Disable form submissions if there are invalid fields
-    (function() {
-      'use strict';
-      window.addEventListener('load', function() {
-        // Get the forms we want to add validation styles to
-        var forms = document.getElementsByClassName('needs-validation');
-        // Loop over them and prevent submission
-        var validation = Array.prototype.filter.call(forms, function(form) {
-          form.addEventListener('submit', function(event) {
-            if (form.checkValidity() === false) {
-              event.preventDefault();
-              event.stopPropagation();
-            }
-            form.classList.add('was-validated');
-          }, false);
-        });
-      }, false);
-    })();
-    </script>
+            
+  
               <div class="col-md-5">
                   <h3 class="text-info font-weight-bold font-italic text-justify pt-4">i wish i could relate to the people i'm related to</h3>
                 <p class="text-primary font-family-georgia,serif font-italic"> Like branches on a tree, our lives may grow in different directions yet our roots remain as one.
